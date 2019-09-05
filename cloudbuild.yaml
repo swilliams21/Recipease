@@ -1,0 +1,4 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud:latest'
+  args: ['source', 'repos', 'clone', 'default']
+  timeout: '600s'
