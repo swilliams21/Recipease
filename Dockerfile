@@ -1,5 +1,4 @@
-FROM node:10.16.3-alpine
-COPY web-content ./web-content
-COPY index.js package.json package-lock.json   ./
-RUN npm install
-CMD [ "npm", "run", "docker-start" ]
+FROM maven:3.3.9-jdk-8-alpine as build-env
+
+
+CMD ["java", "mvnw"]
