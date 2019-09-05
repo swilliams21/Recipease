@@ -1,4 +1,5 @@
 steps:
-- name: 'gcr.io/cloud-builders/gcloud:latest'
-  args: ['source', 'repos', 'clone', 'default']
-  timeout: '600s'
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/cloudadmingcpdemos/nodeserver', '.']
+
+timeout: "2000s"
