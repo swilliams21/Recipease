@@ -6,4 +6,4 @@ ENV JDBC_USERNAME="user"
 ENV JDBC_PASSWORD="password"
 COPY . .
 RUN mvn install
-CMD java -jar Recipease-0.0.1-SNAPSHOT.jar 
+CMD java -jar target/Recipease-0.0.1-SNAPSHOT.jar 
