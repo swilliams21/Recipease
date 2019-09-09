@@ -4,7 +4,7 @@ server:
 spring:
   application:
     name: recipease
-  
+ 
   datasource:
     dirverClassName: org.postgresql.Driver
     initilization-mode: never
