@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: Recipease
+    name: recipease
  
   datasource:
     dirverClassName: org.postgresql.Driver
