@@ -18,5 +18,5 @@ spring:
       ddl-auto: create
     properties:
       hibernate:
-        default_schema: postgres
+        default_schema: recipease
     show-sql: false
