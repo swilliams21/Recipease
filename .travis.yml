@@ -4,3 +4,5 @@ dist: trusty
 deploy:
   provider: script
   script: "mvn install"
+before_install:
+  - chmod +x mvnw
