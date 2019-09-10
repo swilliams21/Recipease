@@ -1,3 +1,4 @@
 mvn install
 git status
-pwd
+cd /target
+ls
