@@ -3,6 +3,8 @@ sudo: true
 dist: trusty
 deploy:
   script: "mvn install"
+  skip_cleanup: true
+  overwrite: true
 script: 
 - echo "skipping tests"
 before_install:
