@@ -1,11 +1,8 @@
 language: java
 sudo: true
 dist: trusty
-deploy:
-- script:
-    mvn install
-- script:
-    git status
+script:
+  sh sh.sh
 #script: 
 #- echo "skipping tests"
 before_install:
