@@ -8,3 +8,19 @@ addons:
       - oracle-java9-installer
 before_install:
   - chmod +x mvnw
+cache:
+  directories:
+  - "$HOME/.cache"
+deploy:
+  provider: script
+  script: "cp .travis.settings.xml $HOME/.m2/settings.xml && mvn deploy"
+  skip_cleanup: true
+  on:
+    tags: true
+
+notifications:
+  email:
+    recipients:
+    - julio@packagecloud.io
+    on_success: change
+    on_failure: always
