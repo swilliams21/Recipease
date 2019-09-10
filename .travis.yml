@@ -2,7 +2,8 @@ language: java
 sudo: true
 dist: trusty
 deploy:
-  provider: script
   script: "mvn install"
+script: 
+- echo "skipping tests"
 before_install:
   - chmod +x mvnw
