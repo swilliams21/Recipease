@@ -7,7 +7,7 @@ deploy:
   overwrite: true
   file_glob: true
   file: target/Recipease-0.0.1-SNAPSHOT.jar
-script: 
-- echo "skipping tests"
+#script: 
+#- echo "skipping tests"
 before_install:
   - chmod +x mvnw
