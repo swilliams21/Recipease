@@ -8,9 +8,9 @@ spring:
   datasource:
     dirverClassName: org.postgresql.Driver
     initilization-mode: never
-    password: postgres
-    username: postgres
-    url: jdbc:postgresql://35.202.206.103:5432/postgres
+    password: 123
+    username: abc
+    url: jdbc:postgresql://34.70.51.191:5432/recipease
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     generate-ddl: true
@@ -18,5 +18,5 @@ spring:
       ddl-auto: create
     properties:
       hibernate:
-        default_schema: postgres
+        default_schema: recipease
     show-sql: false
